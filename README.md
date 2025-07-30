@@ -17,7 +17,7 @@ A full-stack weather web application built using **Django** on the backend and *
 
 ## Screenshots
 
-> *(Add screenshots of the UI here)*
+> Available  in UI folder
 
 ---
 
