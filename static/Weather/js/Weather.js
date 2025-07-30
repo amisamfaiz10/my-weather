@@ -10,7 +10,7 @@ async function getWeather() {
         });
 
         const headers = {
-            'User-Agent': 'MyApp/1.0 (faiz10@gmail.com)'
+            'User-Agent': 'MyApp/1.0 (gmail)'
         };
 
         try {
@@ -24,7 +24,7 @@ async function getWeather() {
     }
 
     async function getImageFromPexels(query) {
-        const pexelsApiKey = 'IQGMFzVUO8jO45e983SC7NXUNsP9d0fFNZsoBW1Ql76ygCpTH6c0n3gK'; // <-- Replace with your real API key
+        const pexelsApiKey = 'api_key'; // <-- Replace with your real API key
         const url = `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=1`;
 
         try {
@@ -47,7 +47,7 @@ async function getWeather() {
     }
 
     try {
-        const apikey = 'b10b47a7390f065c1eeb26f21b0bfa78';
+        const apikey = 'api_key';
         const city = document.getElementById('city').value;
         const image = document.getElementById("image");
         const info = document.getElementById("img_info");
