@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="{% static 'Weather/css/About.css' %}">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Weather</h2>
+        <hr>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+        </ul>
+    </div>
+    
+    <div class="content">
+        <h1 style="text-align: center; font-size: 60px;">Welcome to the Weather App.</h1>
+        <br>
+        <p style="font-size: 25px;">This app's backend is developed using Python(django) and the simple frontend is created using raw HTML and CSS. The app provides weather information for any city you specify, using the city's coordinates to fetch the weather information.</p>
+        <br>
+        <p style="font-size: 22px;"><strong> NOTE: </strong>Pictures are provided only for "Clear sky, Rain, Thunderstorm, Snow, Drizzle, Cloudy" weather descriptions.</p>
+        <br>
+        <br>
+        <h3>Thank you for using this app.</h3>
+    </div>
+
+
+</body>
+</html>

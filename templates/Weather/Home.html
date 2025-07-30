@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="{% static 'Weather/css/styles.css' %}">
+    <script src="{% static 'Weather/js/Weather.js' %}"></script>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Weather</h2>
+        <hr>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2>Enter a city :</h2>
+        <h1 id="lon"></h1>
+        <h1 id="lat"></h1>
+    
+        <form id="weather-form" onsubmit="return getWeather(event)">
+            <input type="text" id="city" style="height: 10px; padding: 10px;">
+            <button type="submit" style="padding: 3px;">Enter</button>
+        </form>
+    
+        <div id="weather-container">
+            <h3>Current Weather</h3>
+            <div id="weather-info">
+                <p>Enter a city name.</p>
+            </div>
+        </div>
+        <br>
+        <img id="image" height="400" width="400" style="display: none;">
+        <br>
+        <p id="img_info"></p>
+    </div>
+    
+
+</body>
+</html>
